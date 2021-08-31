@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<result xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="catalog_venetianBlind_19031196.xsd">
+    <schoolInformation>
+        <school schoolID="SAMV">
+            <name>Sainik Awasiya Mahavidhyalaya</name>
+            <address>Sallaghari,Bhaktapur</address>
+            <phoneNumber>01-6623456</phoneNumber>
+            <email>samv@gmail.com</email>
+        </school>
+        <school schoolID="SVI">
+            <name>Siddhartha Vanasthali Institue</name>
+            <address>Banasthali,Kathmandu</address>
+            <phoneNumber>01-4885678</phoneNumber>
+            <email>svi@gmail.com</email>
+        </school>
+    </schoolInformation>
+    <Marksheet>
+        <Examination examination="Final" level="LowerSecondary">District Level Examination</Examination>
+        <studentName studentID="a765432" schoolID="SAMV" gender="Male" age="14">Niranjan Thapa</studentName>
+        <subjects>
+            <subject subjectName="Math" subjectID="MA1249">
+                <fullMarks>100</fullMarks>
+                <passMarks>40</passMarks>
+                <marksObtained>
+                    <theory>96</theory>
+                    <total>96</total>
+                </marksObtained>
+                <remarks>Pass</remarks>
+            </subject>
+            <subject subjectName="Computer" subjectID="CMP2536">
+                <fullMarks>100</fullMarks>
+                <passMarks>40</passMarks>
+                <marksObtained>
+                    <theory>50</theory>
+                    <practical>45</practical>
+                    <total>95</total>
+                </marksObtained>
+                <remarks>Pass</remarks>
+            </subject>
+            <subject subjectName="Nepali" subjectID="NEP1476">
+                <fullMarks>100</fullMarks>
+                <passMarks>40</passMarks>
+                <marksObtained>
+                    <theory>65</theory>
+                    <total>65</total>
+                </marksObtained>
+                <remarks>Pass</remarks>
+            </subject>
+            <subject subjectName="Science" subjectID="SCN1549">
+                <fullMarks>100</fullMarks>
+                <passMarks>40</passMarks>
+                <marksObtained>
+                    <theory>67</theory>
+                    <practical>24</practical>
+                    <total>91</total>
+                </marksObtained>
+                <remarks>Pass</remarks>
+            </subject>
+        </subjects>
+        <totalMarksObtained>340</totalMarksObtained>
+        <percentage>86.75%</percentage>
+        <division type="Pass">Distinction</division>
+    </Marksheet>
+    <Marksheet>
+        <Examination examination="Final" level="LowerSecondary">District Level Examination</Examination>
+        <studentName studentID="a706543" schoolID="SVI" gender="Female" age="14">Arya Basnet</studentName>
+        <subjects>
+            <subject subjectName="Math" subjectID="MA1249">
+                <fullMarks>100</fullMarks>
+                <passMarks>40</passMarks>
+                <marksObtained>
+                    <theory>92</theory>
+                    <total>92</total>
+                </marksObtained>
+                <remarks>Pass</remarks>
+            </subject>
+            <subject subjectName="Computer" subjectID="CMP2536">
+                <fullMarks>100</fullMarks>
+                <passMarks>40</passMarks>
+                <marksObtained>
+                    <theory>40</theory>
+                    <practical>45</practical>
+                    <total>90</total>
+                </marksObtained>
+                <remarks>Pass</remarks>
+            </subject>
+            <subject subjectName="Nepali" subjectID="NEP1476">
+                <fullMarks>100</fullMarks>
+                <passMarks>40</passMarks>
+                <marksObtained>
+                    <theory>75</theory>
+                    <total>75</total>
+                </marksObtained>
+                <remarks>Pass</remarks>
+            </subject>
+            <subject subjectName="Science" subjectID="SCN1549">
+                <fullMarks>100</fullMarks>
+                <passMarks>40</passMarks>
+                <marksObtained>
+                    <theory>62</theory>
+                    <practical>24</practical>
+                    <total>86</total>
+                </marksObtained>
+                <remarks>Pass</remarks>
+            </subject>
+        </subjects>
+        <totalMarksObtained>342</totalMarksObtained>
+        <percentage>85.5%</percentage>
+        <division type="Pass">Distinction</division>
+    </Marksheet>
+    <Marksheet>
+        <Examination examination="Pre-Board" level="Primary">District Level Examination</Examination>
+        <studentName studentID="a765462" schoolID="SAMV" gender="Male" age="10">Prashanna Thapa</studentName>
+        <subjects>
+            <subject subjectName="Math" subjectID="MA1249">
+                <fullMarks>100</fullMarks>
+                <passMarks>40</passMarks>
+                <marksObtained>
+                    <theory>86</theory>
+                    <total>86</total>
+                </marksObtained>
+                <remarks>Pass</remarks>
+            </subject>
+            <subject subjectName="Computer" subjectID="CMP2536">
+                <fullMarks>100</fullMarks>
+                <passMarks>40</passMarks>
+                <marksObtained>
+                    <theory>45</theory>
+                    <practical>45</practical>
+                    <total>90</total>
+                </marksObtained>
+                <remarks>Pass</remarks>
+            </subject>
+            <subject subjectName="Nepali" subjectID="NEP1476">
+                <fullMarks>100</fullMarks>
+                <passMarks>40</passMarks>
+                <marksObtained>
+                    <theory>79</theory>
+                    <total>79</total>
+                </marksObtained>
+                <remarks>Pass</remarks>
+            </subject>
+            <subject subjectName="Science" subjectID="SCN1549">
+                <fullMarks>100</fullMarks>
+                <passMarks>40</passMarks>
+                <marksObtained>
+                    <theory>60</theory>
+                    <practical>24</practical>
+                    <total>84</total>
+                </marksObtained>
+                <remarks>Pass</remarks>
+            </subject>
+        </subjects>
+        <totalMarksObtained>12</totalMarksObtained>
+        <percentage>83.3%</percentage>
+        <division type="Pass">Distinction</division>
+    </Marksheet>
+    <Marksheet>
+        <Examination examination="Pre-Board" level="Primary">District Level Examination</Examination>
+        <studentName studentID="a76543" schoolID="SAMV" gender="Female" age="10">Jasmine Singh Thakuri</studentName>
+        <subjects>
+            <subject subjectName="Math" subjectID="MA1249">
+                <fullMarks>100</fullMarks>
+                <passMarks>40</passMarks>
+                <marksObtained>
+                    <theory>92</theory>
+                    <total>92</total>
+                </marksObtained>
+                <remarks>Pass</remarks>
+            </subject>
+            <subject subjectName="Computer" subjectID="CMP2536">
+                <fullMarks>100</fullMarks>
+                <passMarks>40</passMarks>
+                <marksObtained>
+                    <theory>40</theory>
+                    <practical>45</practical>
+                    <total>90</total>
+                </marksObtained>
+                <remarks>Pass</remarks>
+            </subject>
+            <subject subjectName="Nepali" subjectID="NEP1476">
+                <fullMarks>100</fullMarks>
+                <passMarks>40</passMarks>
+                <marksObtained>
+                    <theory>75</theory>
+                    <total>75</total>
+                </marksObtained>
+                <remarks>Pass</remarks>
+            </subject>
+            <subject subjectName="Science" subjectID="SCN1549">
+                <fullMarks>100</fullMarks>
+                <passMarks>40</passMarks>
+                <marksObtained>
+                    <theory>62</theory>
+                    <practical>24</practical>
+                    <total>86</total>
+                </marksObtained>
+                <remarks>Pass</remarks>
+            </subject>
+        </subjects>
+        <totalMarksObtained>342</totalMarksObtained>
+        <percentage>85.5%</percentage>
+        <division type="Pass">Distinction</division>
+    </Marksheet>
+    <Marksheet>
+        <Examination examination="Final" level="Secondary">S.L.C.</Examination>
+        <studentName studentID="a705543" schoolID="SVI" gender="Female" age="16">Preeti Karki</studentName>
+        <subjects>
+            <subject subjectName="Math" subjectID="MA1249">
+                <fullMarks>100</fullMarks>
+                <passMarks>40</passMarks>
+                <marksObtained>
+                    <theory>39</theory>
+                    <total>39</total>
+                </marksObtained>
+                <remarks>Fail</remarks>
+            </subject>
+            <subject subjectName="Computer" subjectID="CMP2536">
+                <fullMarks>100</fullMarks>
+                <passMarks>40</passMarks>
+                <marksObtained>
+                    <theory>40</theory>
+                    <practical>45</practical>
+                    <total>90</total>
+                </marksObtained>
+                <remarks>Pass</remarks>
+            </subject>
+            <subject subjectName="Nepali" subjectID="NEP1476">
+                <fullMarks>100</fullMarks>
+                <passMarks>40</passMarks>
+                <marksObtained>
+                    <theory>75</theory>
+                    <total>75</total>
+                </marksObtained>
+                <remarks>Pass</remarks>
+            </subject>
+            <subject subjectName="Science" subjectID="SCN1549">
+                <fullMarks>100</fullMarks>
+                <passMarks>40</passMarks>
+                <marksObtained>
+                    <theory>62</theory>
+                    <practical>24</practical>
+                    <total>86</total>
+                </marksObtained>
+                <remarks>Pass</remarks>
+            </subject>
+        </subjects>
+        <totalMarksObtained>290</totalMarksObtained>
+        <percentage>72.5%</percentage>
+        <division type="Fail">Fail</division>
+    </Marksheet>
+    <Marksheet>
+        <Examination examination="Final" level="Secondary">S.L.C.</Examination>
+        <studentName studentID="a765732" schoolID="SVI" gender="Male" age="16">Cyrus Shrestha</studentName>
+        <subjects>
+            <subject subjectName="Math" subjectID="MA1249">
+                <fullMarks>100</fullMarks>
+                <passMarks>40</passMarks>
+                <marksObtained>
+                    <theory>86</theory>
+                    <total>86</total>
+                </marksObtained>
+                <remarks>Pass</remarks>
+            </subject>
+            <subject subjectName="Computer" subjectID="CMP2536">
+                <fullMarks>100</fullMarks>
+                <passMarks>40</passMarks>
+                <marksObtained>
+                    <theory>50</theory>
+                    <practical>35</practical>
+                    <total>85</total>
+                </marksObtained>
+                <remarks>Pass</remarks>
+            </subject>
+            <subject subjectName="Nepali" subjectID="NEP1476">
+                <fullMarks>100</fullMarks>
+                <passMarks>40</passMarks>
+                <marksObtained>
+                    <theory>65</theory>
+                    <total>65</total>
+                </marksObtained>
+                <remarks>Pass</remarks>
+            </subject>
+            <subject subjectName="Science" subjectID="SCN1549">
+                <fullMarks>100</fullMarks>
+                <passMarks>40</passMarks>
+                <marksObtained>
+                    <theory>67</theory>
+                    <practical>24</practical>
+                    <total>91</total>
+                </marksObtained>
+                <remarks>Pass</remarks>
+            </subject>
+        </subjects>
+        <totalMarksObtained>12</totalMarksObtained>
+        <percentage>82.75%</percentage>
+        <division type="Pass">Distinction</division>
+    </Marksheet>
+    <Marksheet>
+        <Examination examination="Pre-Board" level="HigherSecondary">HIgher Secondary Examination</Examination>
+        <studentName studentID="a765362" schoolID="SAMV" gender="Male" age="18">Nima Tsering Sherpa</studentName>
+        <subjects>
+            <subject subjectName="Math" subjectID="MA1249">
+                <fullMarks>100</fullMarks>
+                <passMarks>40</passMarks>
+                <marksObtained>
+                    <theory>56</theory>
+                    <total>56</total>
+                </marksObtained>
+                <remarks>Pass</remarks>
+            </subject>
+            <subject subjectName="Computer" subjectID="CMP2536">
+                <fullMarks>100</fullMarks>
+                <passMarks>40</passMarks>
+                <marksObtained>
+                    <theory>20</theory>
+                    <practical>45</practical>
+                    <total>95</total>
+                </marksObtained>
+                <remarks>Pass</remarks>
+            </subject>
+            <subject subjectName="Nepali" subjectID="NEP1476">
+                <fullMarks>100</fullMarks>
+                <passMarks>40</passMarks>
+                <marksObtained>
+                    <theory>50</theory>
+                    <total>50</total>
+                </marksObtained>
+                <remarks>Pass</remarks>
+            </subject>
+            <subject subjectName="Science" subjectID="SCN1549">
+                <fullMarks>100</fullMarks>
+                <passMarks>40</passMarks>
+                <marksObtained>
+                    <theory>37</theory>
+                    <practical>14</practical>
+                    <total>51</total>
+                </marksObtained>
+                <remarks>Pass</remarks>
+            </subject>
+        </subjects>
+        <totalMarksObtained>248</totalMarksObtained>
+        <percentage>56.75%</percentage>
+        <division type="Pass">Second Division</division>
+    </Marksheet>
+    <Marksheet>
+        <Examination examination="Pre-Board" level="HigherSecondary">HIgher Secondary Examination</Examination>
+        <studentName studentID="a76643" schoolID="SVI" gender="Female" age="18">Namrata Bista</studentName>
+        <subjects>
+            <subject subjectName="Math" subjectID="MA1249">
+                <fullMarks>100</fullMarks>
+                <passMarks>40</passMarks>
+                <marksObtained>
+                    <theory>72</theory>
+                    <total>72</total>
+                </marksObtained>
+                <remarks>Pass</remarks>
+            </subject>
+            <subject subjectName="Computer" subjectID="CMP2536">
+                <fullMarks>100</fullMarks>
+                <passMarks>40</passMarks>
+                <marksObtained>
+                    <theory>25</theory>
+                    <practical>45</practical>
+                    <total>70</total>
+                </marksObtained>
+                <remarks>Pass</remarks>
+            </subject>
+            <subject subjectName="Nepali" subjectID="NEP1476">
+                <fullMarks>100</fullMarks>
+                <passMarks>40</passMarks>
+                <marksObtained>
+                    <theory>75</theory>
+                    <total>75</total>
+                </marksObtained>
+                <remarks>Pass</remarks>
+            </subject>
+            <subject subjectName="Science" subjectID="SCN1549">
+                <fullMarks>100</fullMarks>
+                <passMarks>40</passMarks>
+                <marksObtained>
+                    <theory>62</theory>
+                    <practical>24</practical>
+                    <total>86</total>
+                </marksObtained>
+                <remarks>Pass</remarks>
+            </subject>
+        </subjects>
+        <totalMarksObtained>342</totalMarksObtained>
+        <percentage>75.5%</percentage>
+        <division type="Pass">First Division</division>
+    </Marksheet>
+</result>

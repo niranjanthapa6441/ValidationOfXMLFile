@@ -1,0 +1,32 @@
+<!ELEMENT result (schoolInformation,Marksheet+)>
+<!ELEMENT schoolInformation (school+)>
+<!ATTLIST school schoolID ID #REQUIRED>
+<!ELEMENT school (name,address,phoneNumber,email)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT address (#PCDATA)>
+<!ELEMENT phoneNumber (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT Marksheet (Examination,studentName,subjects,totalMarksObtained,percentage,division)>
+<!ELEMENT Examination (#PCDATA)>
+<!ATTLIST Examination examination  (Final|Pre-Board) #REQUIRED>
+<!ATTLIST Examination level  (Secondary|Primary|LowerSecondary|HigherSecondary) #REQUIRED>
+<!ELEMENT studentName (#PCDATA)>
+<!ATTLIST studentName studentID ID #REQUIRED>
+<!ATTLIST studentName schoolID IDREF #REQUIRED>
+<!ATTLIST studentName gender  (Male|Female) #REQUIRED>
+<!ATTLIST studentName age CDATA #REQUIRED>
+<!ELEMENT subjects (subject+)>
+<!ELEMENT subject (fullMarks,passMarks,marksObtained,remarks)>
+<!ATTLIST subject subjectName  (Math|Science|Computer|Nepali) #REQUIRED>
+<!ATTLIST subject subjectID  (MA1249|CMP2536|NEP1476|SCN1549) #REQUIRED>
+<!ELEMENT fullMarks (#PCDATA)>
+<!ELEMENT passMarks (#PCDATA)>
+<!ELEMENT marksObtained (theory,practical?,total)>
+<!ELEMENT theory (#PCDATA)>
+<!ELEMENT practical (#PCDATA)>
+<!ELEMENT total (#PCDATA)>
+<!ELEMENT remarks (#PCDATA)>
+<!ELEMENT totalMarksObtained (#PCDATA)>
+<!ELEMENT percentage (#PCDATA)>
+<!ELEMENT division (#PCDATA)>
+<!ATTLIST division type  (Pass|Fail) #REQUIRED>

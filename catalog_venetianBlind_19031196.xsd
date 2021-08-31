@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="result" type="resultType" />
+  <xs:simpleType name="email">
+          <xs:restriction base="xs:string">
+            <xs:pattern value="[^@]+@[^\.]+\..+" />
+          </xs:restriction>
+        </xs:simpleType>  
+  <xs:simpleType name="examination">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Final"/>
+      <xs:enumeration value="Pre-Board"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="level">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Primary"/>
+      <xs:enumeration value="LowerSecondary"/>
+      <xs:enumeration value="Secondary"/>
+      <xs:enumeration value="HigherSecondary"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="total">
+    <xs:restriction base="xs:int">
+      <xs:minInclusive value="1"/>
+      <xs:maxInclusive value="100"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="passMarks">
+    <xs:restriction base="xs:int">
+      <xs:pattern value="40"></xs:pattern>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="fullMarks">
+    <xs:restriction base="xs:int">
+      <xs:pattern value="100"></xs:pattern>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="remarks">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Pass" />
+      <xs:enumeration value="Fail" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="subjectName">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Math"/>
+      <xs:enumeration value="Science"/>
+      <xs:enumeration value="Computer"/>
+      <xs:enumeration value="Nepali"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="subjectID">
+    <xs:restriction base="xs:string">
+        <xs:enumeration value="MA1249" />
+        <xs:enumeration value="NEP1476" />
+        <xs:enumeration value="CMP2536" />
+        <xs:enumeration value="SCN1549" />
+    </xs:restriction>
+</xs:simpleType>
+<xs:simpleType name="type">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="Pass" />
+    <xs:enumeration value="Fail" />
+  </xs:restriction>
+</xs:simpleType>
+<xs:attributeGroup name="examination">
+  
+</xs:attributeGroup>
+  <xs:complexType name="school">
+    <xs:sequence>
+      <xs:element type="xs:string" name="name" />
+      <xs:element type="xs:string" name="address" />
+      <xs:element type="xs:string" name="phoneNumber" />
+      <xs:element type="email" name="email">
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute type="xs:ID" name="schoolID" use="required" />
+  </xs:complexType>
+  <xs:complexType name="schoolInformation">
+    <xs:sequence>
+      <xs:element type="school" name="school" maxOccurs="unbounded" minOccurs="1" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Examination">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="examination" name="examination" use="required"/>
+        <xs:attribute type="level" name="level" use="required" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:simpleType name="gender">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Male"/>
+      <xs:enumeration value="Female"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="age">
+    <xs:restriction base="xs:int">
+      <xs:minInclusive value="1"/>
+      <xs:maxInclusive value="100"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="studentName">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="studentID" use="required" />
+        <xs:attribute type="xs:IDREF" name="schoolID" use="required" />
+        <xs:attribute type="gender" name="gender" use="required" />
+        <xs:attribute type="age" name="age" use="required" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="marksObtainedType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="theory" />
+      <xs:element name="practical" minOccurs="0" maxOccurs="1"/>
+      <xs:element type="total" name="total" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="subjectType">
+    <xs:sequence>
+      <xs:element type="fullMarks" name="fullMarks" />
+      <xs:element type="passMarks" name="passMarks" />
+      <xs:element type="marksObtainedType" name="marksObtained" />
+      <xs:element type="remarks" name="remarks">
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute type="subjectName" name="subjectName" use="required" />
+    <xs:attribute type="subjectID" name="subjectID" use="required" />
+  </xs:complexType>
+  <xs:complexType name="subjectsType">
+    <xs:sequence>
+      <xs:element type="subjectType" name="subject" maxOccurs="4" minOccurs="4" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="division">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="type" name="type" use="required" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="MarksheetType">
+    <xs:sequence>
+      <xs:element type="Examination" name="Examination" />
+      <xs:element type="studentName" name="studentName" />
+      <xs:element type="subjectsType" name="subjects" />
+      <xs:element name="totalMarksObtained" />
+      <xs:element name="percentage" type="xs:string" />
+      <xs:element type="division" name="division" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="resultType">
+    <xs:sequence>
+      <xs:element type="schoolInformation" name="schoolInformation" />
+      <xs:element type="MarksheetType" name="Marksheet" maxOccurs="unbounded" minOccurs="1" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
